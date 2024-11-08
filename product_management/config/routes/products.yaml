@@ -1,0 +1,24 @@
+get_products:
+    path: /products
+    controller: App\Controller\ProductController::getAllProducts
+    methods: GET
+
+get_product:
+    path: /products/{id}
+    controller: App\Controller\ProductController::getProduct
+    methods: GET
+
+create_product:
+    path: /products
+    controller: App\Controller\ProductController::createProduct
+    methods: POST
+
+update_product:
+    path: /products/{id}
+    controller: App\Controller\ProductController::updateProduct
+    methods: PATCH
+
+delete_product:
+    path: /products/{id}
+    controller: App\Controller\ProductController::deleteProduct
+    methods: DELETE
